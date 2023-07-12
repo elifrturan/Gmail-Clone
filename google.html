@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gmail Clone</title>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="nav-left">
+            <div class="icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="">
+        </div>
+
+        <div class="nav-middle">
+            <div class="container">
+                <div class="container-first">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="search" id="search" placeholder="Postalarda arayın">
+                </div>
+                <div class="sliders">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="container2"> 
+                <i class="fa-regular fa-circle-question"></i>
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-grip"></i>
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="sidebar">
+            <div class="create">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <div>Oluştur</div>
+            </div>
+
+            <div class="main">
+                <div style="width: 90%;" class="content marked">
+                    <i class="fa-solid fa-inbox"></i>
+                    <p>Gelen Kutusu</p>
+                </div>
+
+                <div class="content">
+                    <i class="fa-regular fa-star"></i>
+                    <p>Yıldızlı</p>
+                </div>
+
+                <div class="content">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Ertelenenler</p>
+                </div>
+
+                <div class="content">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    <p>Gönderilmiş Postalar</p>
+                </div>
+
+                <div class="content">
+                    <i class="fa-regular fa-note-sticky"></i>
+                    <p>Taslaklar</p>
+                </div>
+
+                <div class="content">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <p>Diğer</p>
+                </div>
+
+            </div>
+
+            <div class="labels">
+                <div id="header">
+                    <span>Etiketler</span>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div id="header-main">
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                    <p>Konuşma Geçmişi</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="mail">
+            <div class="mail-header">
+                <div class="header-left">
+                    <input type="checkbox" name="fullMail" id="fullMail">
+                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-rotate-right" id="other"></i>
+                    <img src="otherIco.ico" alt="" width="16px" height="16.8px" id="ico">
+                </div>
+                <div class="header-right">
+                    <p style="color: grey;">741 satırdan 1-50 arası</p>
+                    <i style="opacity: 0.5;" class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            <div class="mail-title">
+                <div class="mail-first">
+                    <i style="color: rgba(0, 0, 255, 0.696)" class="fa-solid fa-inbox"></i>
+                    <p>Birincil</p>
+                </div>
+
+                <div class="mail-second">
+                    <i class="fa-solid fa-receipt"></i> 
+                    <p style="margin-left: 0;">Tanıtımlar</p>
+                </div>
+
+                <div class="mail-third">
+                    <i class="fa-solid fa-users"></i>
+                    <p style="margin-left: 0;">Sosyal</p>
+                </div>
+            </div>
+
+            <div class="mail-body">
+                <div class="mail-container">
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Medium Daily Digest</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">07.40</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Medium Daily Digest</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">9 Tem</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold;">Spotify</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">9 Tem</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold;">Spotify</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">5 Tem</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold;">iCloud</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">5 Tem</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Sosyopix</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">3 Tem</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Spotify</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">1 Tem</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Dribble</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">1 Tem</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Spotify</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">27 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Medium Daily Digest</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">26 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Medium Daily Digest</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">24 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Spotify</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">23 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Spotify</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">22 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Dribbble</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">21 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Dribbble</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">20 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">obilet.com</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">19 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Applet</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">10 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Medium Daily Digest</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">9 Haz</p>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="row-first">
+                            <input style="color: gainsboro;" type="checkbox" id="rowCheck">
+                            <i style="color: gainsboro;" class="fa-regular fa-star"></i>
+                            <p style="font-weight: bold; margin-bottom: 0;">Medium Daily Digest</p>
+                        </div>
+                        <div class="row-middle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit ameticing elit.</p>
+                        </div>
+                        <div> 
+                            <p style="font-size: 13px; font-weight: bolder;">8 Haz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body-left">
+            <div class="body-left-icon">
+                <i class="fa-regular fa-calendar-days"></i>
+                <i class="fa-regular fa-clipboard"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/46bb5d8e1e.js" crossorigin="anonymous"></script>
+</body>
+</html>
